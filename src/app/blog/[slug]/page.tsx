@@ -57,7 +57,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           className="absolute z-20 left-10 top-24 uppercase [text-shadow:_0_6px_4px_rgb(50_50_50_/_1)] duration-200 
             transition-all hover:opacity-65 font-medium md:text-lg md:left-20 md:top-28 lg:text-lg lg:top-32"
         >
-          ⬅ Retour
+          ⬅ Back
         </Link>
         <h1
           className="z-10 text-2xl font-medium mb-4 px-8 [text-shadow:_0_4px_4px_rgb(50_50_50_/_0.9)] 

@@ -31,7 +31,7 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
       className="w-full space-y-4 rounded-lg border-2 p-8 shadow-lg backdrop-blur-md lg:col-span-3"
     >
       <label className="sr-only" htmlFor="name">
-        Titre *
+        Title *
       </label>
       <input
         className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
@@ -44,11 +44,11 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="sr-only" htmlFor="phone">
-            Nom du client
+            Client name
           </label>
           <input
             className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
-            placeholder="Nom du client"
+            placeholder="Client name"
             type="text"
             id="client_name"
             name="client_name"
@@ -56,12 +56,12 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
         </div>
         <div>
           <label className="sr-only" htmlFor="phone">
-            Image projet *
+            Project image *
           </label>
           <input
             className="w-full cursor-pointer rounded-lg border border-gray-200 bg-transparent p-3 text-sm file:mr-2
               file:border-none"
-            placeholder="Image du projet *"
+            placeholder="Project image *"
             type="file"
             accept="image/*"
             id="preview_picture_url"
@@ -71,11 +71,11 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
         </div>
         <div>
           <label className="sr-only" htmlFor="phone">
-            Lien du projet *
+            Project link *
           </label>
           <input
             className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
-            placeholder="Lien du projet"
+            placeholder="Project link"
             type="text"
             name="link"
             id="link"
@@ -96,7 +96,7 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
       </div>
 
       <fieldset className="grid grid-cols-1 gap-4 text-center sm:grid-cols-2">
-        <legend className="mb-3">Status du projet</legend>
+        <legend className="mb-3">Project status</legend>
         <label
           htmlFor="finished"
           className="block w-full cursor-pointer rounded-lg border-2 border-gray-200 p-3 duration-200
@@ -115,7 +115,7 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
             onChange={handleChange}
           />
 
-          <span className="text-sm"> Terminé </span>
+          <span className="text-sm"> Completed </span>
         </label>
         <label
           htmlFor="working"
@@ -135,7 +135,7 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
             onChange={handleChange}
           />
 
-          <span className="text-sm"> En cours de développement </span>
+          <span className="text-sm"> In development </span>
         </label>
       </fieldset>
 
@@ -154,7 +154,7 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
         ></textarea>
       </div>
       <label htmlFor="stacks_id" className="flex flex-col gap-2 text-center">
-        Technos du projet
+        Technologies used in the project
         <select
           name="stacks_id"
           id="stacks_id"
@@ -173,7 +173,7 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
         className="mt-4 flex w-full cursor-pointer flex-col gap-2 rounded-lg border border-gray-200 bg-transparent p-3
           text-center text-base font-medium"
       >
-        Publier le projet ?
+        Publish the project?
         <input type="checkbox" id="published" name="published" />
       </label>
 
@@ -183,7 +183,7 @@ export default function AddProjectForm({ stacks }: { stacks: Array<Stack> }) {
           className="rounded-lg bg-secondaryColor px-6 py-3 font-medium text-darkColor duration-200
             hover:bg-secondaryLight hover:text-lightColor sm:w-auto"
         >
-          Enregistrer ce projet
+          Save this project
         </button>
       </div>
     </form>

@@ -48,7 +48,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
       className="w-full space-y-4 rounded-lg border-2 p-8 shadow-lg backdrop-blur-md lg:col-span-3"
     >
       <label className="sr-only" htmlFor="name">
-        Titre *
+        Title *
       </label>
       <input
         className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
@@ -62,11 +62,11 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="sr-only" htmlFor="client_name">
-            Nom du client
+            Client Name *
           </label>
           <input
             className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
-            placeholder="Nom du client"
+            placeholder="Client Name"
             type="text"
             id="client_name"
             name="client_name"
@@ -75,7 +75,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
         </div>
         <div>
           <label className="sr-only" htmlFor="preview_picture_url">
-            Image projet *
+            Project Image *
           </label>
           <input
             className="w-full cursor-pointer rounded-lg border border-gray-200 bg-transparent p-3 text-sm file:mr-2
@@ -90,7 +90,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
         </div>
         <div>
           <label className="sr-only" htmlFor="link">
-            Lien du projet *
+            Project Link *
           </label>
           <input
             className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
@@ -117,7 +117,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
       </div>
 
       <fieldset className="grid grid-cols-1 gap-4 text-center sm:grid-cols-2">
-        <legend className="mb-3">Status du projet</legend>
+        <legend className="mb-3">Project Status</legend>
         <label
           htmlFor="finished"
           className="block w-full cursor-pointer rounded-lg border-2 border-gray-200 p-3 duration-200
@@ -135,7 +135,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
             checked={status === "Terminé"}
             onChange={handleStatusChange}
           />
-          <span className="text-sm"> Terminé </span>
+          <span className="text-sm"> Completed</span>
         </label>
         <label
           htmlFor="working"
@@ -154,7 +154,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
             checked={status === "En cours de développement"}
             onChange={handleStatusChange}
           />
-          <span className="text-sm"> En cours de développement </span>
+          <span className="text-sm"> In development </span>
         </label>
       </fieldset>
 
@@ -174,7 +174,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
         ></textarea>
       </div>
       <label htmlFor="stacks_id" className="flex flex-col gap-2 text-center">
-        Technos du projet
+        Technologies used in the project
         <select
           name="stacks_id"
           id="stacks_id"
@@ -194,7 +194,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
         className="mt-4 flex w-full cursor-pointer flex-col gap-2 rounded-lg border border-gray-200 bg-transparent p-3
           text-center text-base font-medium"
       >
-        Publier le projet ?
+        Publish the project?
         <input type="checkbox" id="published" name="published" defaultChecked={projectToModify?.published} />
       </label>
 
@@ -204,7 +204,7 @@ export default function EditProjectForm({ stacks }: { stacks: Array<Stack> }) {
           className="rounded-lg bg-secondaryColor px-6 py-3 font-medium text-darkColor duration-200
             hover:bg-secondaryLight hover:text-lightColor sm:w-auto"
         >
-          Mettre à jour ce projet
+          Update this project
         </button>
       </div>
     </form>

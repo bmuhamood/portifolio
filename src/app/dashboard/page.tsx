@@ -14,7 +14,7 @@ export default async function page() {
   return (
     <>
       <main className="w-full bg-glassmorphism2 bg-cover py-24 bg-fixed bg-center">
-        <h1 className="w-full text-center text-3xl md:text-4xl">Gestion des projets et technos</h1>
+        <h1 className="w-full text-center text-3xl md:text-4xl">Project and technology management</h1>
         <div id="form" className="flex flex-col gap-6 p-4 lg:p-8 lg:gap-8 lg:flex-row">
           <ProjectFormSection stacks={stacksArray} />
           <StackFormSection />

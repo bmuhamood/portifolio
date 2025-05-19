@@ -22,13 +22,12 @@ export default async function page() {
       >
         <hgroup className="mx-auto max-w-screen-sm text-center my-16 mb-8 lg:mb-16">
           <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold">
-            Bienvenue sur mon blog de développeur web / entrepreneur
+            Welcome to my web developer / entrepreneur blog
           </h1>
           <p className="font-light text-gray-500 sm:text-xl">
-            Le développement web au service de l'entrepreneuriat, c'est ce que je vous propose de découvrir à travers
-            mon blog.
+            Web development for entrepreneurship is what I invite you to discover through my blog.
             <br />
-            Technos web, Saas, réalité augmenté, actus, tutoriels, retours d'expérience...
+            Web technologies, SaaS, augmented reality, news, tutorials, feedback...
           </p>
         </hgroup>
         <div className="grid gap-6 mb-8 md:mb-12 lg:mb-16 md:grid-cols-2 xl:grid-cols-3">
@@ -54,10 +53,10 @@ export default async function page() {
                   <h2 className="mb-2 text-xl font-semibold tracking-tight md:text-2xl">{article.title}</h2>
                   <div className="flex justify-between items-center">
                     <p className="flex items-center font-medium space-x-4 text-base-300">
-                      Auteur : {article.author.name}
+                      Author : {article.author.name}
                     </p>
                     <span className="inline-flex items-center font-medium hover:underline text-base-300">
-                      Voir l'article
+                      View article
                       <svg
                         className="ml-2 w-4 h-4"
                         fill="currentColor"

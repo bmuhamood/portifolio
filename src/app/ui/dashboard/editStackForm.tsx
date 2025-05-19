@@ -40,11 +40,11 @@ export default function EditStackForm() {
       className="w-full space-y-4 rounded-lg border-2 p-8 shadow-lg backdrop-blur-md lg:col-span-3"
     >
       <label className="sr-only" htmlFor="name">
-        Nom *
+        Name *
       </label>
       <input
         className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
-        placeholder="Titre *"
+        placeholder="Title *"
         type="text"
         id="name"
         name="name"
@@ -52,12 +52,12 @@ export default function EditStackForm() {
       />
       <div>
         <label className="sr-only" htmlFor="logo">
-          Image projet *
+          Image project *
         </label>
         <input
           className="w-full cursor-pointer rounded-lg border border-gray-200 bg-transparent p-3 text-sm file:mr-2
               file:border-none mb-4"
-          placeholder="Logo de la techno *"
+          placeholder="Tech logo *"
           type="file"
           accept="image/*"
           id="logo"
@@ -74,11 +74,11 @@ export default function EditStackForm() {
       </div>
       <div>
         <label className="sr-only" htmlFor="stack_link">
-          Lien de la techno *
+        Tech link *
         </label>
         <input
           className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm"
-          placeholder="Lien du projet"
+          placeholder="Project link *"
           type="text"
           name="stack_link"
           id="stack_link"
@@ -91,7 +91,7 @@ export default function EditStackForm() {
           className="rounded-lg bg-secondaryColor px-8 py-3 font-medium text-darkColor duration-200
             hover:bg-secondaryLight hover:text-lightColor sm:w-auto"
         >
-          Mettre à jour cette techno
+          Update this tech
         </button>
       </div>
     </form>

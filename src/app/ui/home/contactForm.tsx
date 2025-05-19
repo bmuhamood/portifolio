@@ -11,6 +11,7 @@ interface ContactFormDictionary {
       consulting: string;
       dev: string;
       seo: string;
+      fulltime: string;
     };
     message: string;
     send: string;
@@ -29,7 +30,7 @@ export default function ContactForm({ dictionnary }: { dictionnary: ContactFormD
           <p className="mb-4 max-w-xl text-lg" dangerouslySetInnerHTML={{ __html: dictionnary.description }}></p>
 
           <a
-            href="mailto:contact@Bbosa Muhamoodwebpro.com"
+            href="mailto:bbosa2009@gmail.com"
             className="text-lg font-bold text-secondaryColor duration-200 hover:text-secondaryLight lg:text-2xl"
           >
             {dictionnary.email}{" "}
@@ -41,15 +42,15 @@ export default function ContactForm({ dictionnary }: { dictionnary: ContactFormD
           method="POST"
           className="space-y-4 rounded-lg border-2 bg-glassmorphism p-8 shadow-lg backdrop-blur-md lg:col-span-3 lg:p-12"
         >
-          <input type="hidden" aria-hidden name="access_key" value="280330b4-d8a3-4a40-b1bb-05c086f6cf92"></input>
+          <input type="hidden" aria-hidden name="access_key" value="7fb5def4-86e0-4a97-a4b0-f767b4fe8795"></input>
           <div>
             <label className="sr-only" htmlFor="name">
-              Nom
+              Name
             </label>
             <input
               className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm duration-200
                 hover:border-primaryLight focus:outline-primaryColor"
-              placeholder="Nom *"
+              placeholder="Name *"
               type="text"
               id="name"
               name="name"
@@ -64,7 +65,7 @@ export default function ContactForm({ dictionnary }: { dictionnary: ContactFormD
               <input
                 className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm duration-200
                   hover:border-primaryLight focus:outline-primaryColor"
-                placeholder="Adresse email *"
+                placeholder="Email *"
                 type="email"
                 id="email"
                 name="email"
@@ -79,7 +80,7 @@ export default function ContactForm({ dictionnary }: { dictionnary: ContactFormD
               <input
                 className="w-full rounded-lg border border-gray-200 bg-transparent p-3 text-sm duration-200
                   hover:border-primaryLight focus:outline-primaryColor"
-                placeholder="Numéro de téléphone"
+                placeholder="Mobile"
                 type="tel"
                 id="phone"
                 name="phone"
@@ -121,6 +122,17 @@ export default function ContactForm({ dictionnary }: { dictionnary: ContactFormD
               <input className="sr-only" id="reprise" type="radio" tabIndex={-1} name="option" />
 
               <span className="text-sm">{dictionnary.form.radio.seo}</span>
+            </label>
+
+            <label
+              htmlFor="fulltime"
+              className="block w-full cursor-pointer rounded-lg border-2 border-gray-200 p-3 duration-200
+                hover:border-primaryLight has-[:checked]:border-primaryLight has-[:checked]:bg-black
+                has-[:checked]:text-white"
+              tabIndex={0}
+            >
+              <input className="sr-only" id="fulltime" type="radio" tabIndex={-1} name="option" />
+              <span className="text-sm">{dictionnary.form.radio.fulltime}</span>
             </label>
           </fieldset>
 

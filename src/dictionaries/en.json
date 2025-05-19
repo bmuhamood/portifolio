@@ -80,7 +80,7 @@
     "contact": {
       "title": "A crazy project? Let's discuss it:",
       "description": "Whether you're a business, independent professional, or just curious about web development, don't hesitate to contact me. You can reach me by email or through the form, and I'll respond as soon as possible!",
-      "email": "contact@Bbosa Muhamoodwebpro.com",
+      "email": "bbosa2009@gmail.com",
       "form": {
         "name": "Name",
         "email": "Email",
@@ -89,7 +89,8 @@
         "radio": {
           "consulting": "Consulting",
           "dev": "Web Development",
-          "seo": "SEO"
+          "seo": "SEO",
+          "fulltime": "Full-time job"
         },
         "message": "Message",
         "send": "Send me your sweet words"
@@ -97,7 +98,7 @@
     },
     "footer": {
       "description": "The web development at the service of your business",
-      "rights_reserved": "Copyright © 2024. All rights reserved.",
+      "rights_reserved": "Copyright © 2020 - 2025. All rights reserved.",
       "navigation": {
         "services": "Services",
         "experiences": "Experiences",

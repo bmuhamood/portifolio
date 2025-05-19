@@ -33,7 +33,7 @@ export default function ServiceSection({ dictionnary }: { dictionnary: ServiceSe
               transition duration-200 hover:bg-secondaryLight hover:text-lightColor focus:outline-none focus:ring
               focus:ring-yellow-400 xl:text-base"
           >
-            Démarrez votre projet maintenant
+            Start your project now
           </Link>
         </div>
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4">

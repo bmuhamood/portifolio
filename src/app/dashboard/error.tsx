@@ -9,12 +9,12 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
 
   return (
     <main className="flex h-screen flex-col items-center justify-center">
-      <h2 className="text-center">Il y a eu une erreur !</h2>
+      <h2 className="text-center">There was an error!</h2>
       <button
         className="mt-4 rounded-md bg-blue-500 px-4 py-2 text-sm text-white transition-colors hover:bg-blue-400"
         onClick={() => reset()}
       >
-        Réessayer
+        Try again
       </button>
     </main>
   );

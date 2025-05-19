@@ -43,10 +43,10 @@ export default async function page({ params }: { params: { category: string } })
                   <h2 className="mb-2 text-xl font-semibold tracking-tight md:text-2xl">{article.title}</h2>
                   <div className="flex justify-between items-center">
                     <p className="flex items-center font-medium space-x-4 text-base-300">
-                      Auteur : {article.author.name}
+                      Author : {article.author.name}
                     </p>
                     <span className="inline-flex items-center font-medium hover:underline text-base-300">
-                      Voir l'article
+                      View article
                       <svg
                         className="ml-2 w-4 h-4"
                         fill="currentColor"

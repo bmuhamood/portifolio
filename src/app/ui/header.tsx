@@ -151,7 +151,7 @@ export default function Header({ dictionnary, lang }: { dictionnary: Record<stri
             width={64}
             height={64}
           />
-        </button>
+        </button>English
       </nav>
     </header>
   );
