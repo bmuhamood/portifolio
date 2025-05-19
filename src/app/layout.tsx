@@ -1,11 +1,14 @@
-/* eslint-disable @next/next/next-script-for-ga */
+/* eslint-disable @next/next/next-script-for-ga */ 
+// Disables a specific Next.js lint rule (probably for Google Analytics script usage)
+
 import React from "react";
 import type { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
-import { Person, WithContext } from "schema-dts";
-import "./globals.css";
-import { SanityLive } from "@/sanity/client";
+import { Bricolage_Grotesque } from "next/font/google"; // Imports a Google font
+import { Person, WithContext } from "schema-dts"; // Imports types for structured data (Schema.org)
+import "./globals.css"; // Global CSS
+import { SanityLive } from "@/sanity/client"; // Sanity CMS live preview
 
+// Define structured data about the person for SEO (JSON-LD format)
 const personStructuredData: WithContext<Person> = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -17,31 +20,33 @@ const personStructuredData: WithContext<Person> = {
     "https://github.com/Bbosa MuhamoodWebPro",
     "https://www.agencenocode.com/",
   ],
-  jobTitle: "Développeur Web Next / Webflow",
+  jobTitle: "Next.js / Webflow Web Developer",
   worksFor: {
     "@type": "Organization",
-    name: "Agence No Code",
+    name: "No Code Agency",
   },
 };
 
+// Load the Bricolage Grotesque font
 const bG = Bricolage_Grotesque({ subsets: ["latin"] });
 
+// Website metadata for SEO
 export const metadata: Metadata = {
-  title: "Portfolio Développeur Web Next.js - Bbosa MuhamoodWebPro",
-  description: "Développeur Web Next.js / et d'applications Webflow, freelance et entrepreneur indépendant",
+  title: "Next.js Web Developer Portfolio - Bbosa MuhamoodWebPro",
+  description: "Next.js / Webflow web developer, freelancer, and independent entrepreneur",
   metadataBase: new URL("https://www.bbosamuhamood.com/"),
   keywords: [
-    "Développeur Web",
+    "Web Developer",
     "Next.js",
     "React",
-    "applications web",
+    "web applications",
     "Node.js",
     "Webflow",
     "Freelance",
     "Entrepreneur",
   ],
   alternates: {
-    canonical: `/`,
+    canonical: `/`, // Canonical URL for the homepage
   },
   robots: {
     index: true,
@@ -54,38 +59,38 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.bbosamuhamood.com/",
-    title: "Portfolio développeur web - Bbosa MuhamoodWebPro",
-    description:
-      "Développeur Web Next.js et d'application Webflow, freelance et développeur indépendant, je créé avec passions Saas et autres applications pour la marketplace Webflow",
+    title: "Portfolio - Bbosa Muhamood",
+    description: "Entrepreneur and freelance full-stack Web developer dedicated to your business",
     images: [
       {
         url: `https://www.bbosamuhamood.com/assets/images/opengraph-image.png`,
         width: 800,
         height: 600,
-        alt: "Portfolio de Bbosa Muhamood",
+        alt: "Portfolio - Bbosa Muhamood",
       },
     ],
-    siteName: "Bbosa MuhamoodWebPro",
+    siteName: "Bbosa Muhamood Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Bbosa MuhamoodWebPro",
-    title: "Portfolio Développeur Next.js - Bbosa MuhamoodWebPro",
-    description:
-      "Développeur Web Next.js et d'application Webflow, freelance et développeur indépendant, je créé avec passions Saas et autres applications pour la marketplace Webflow",
+    site: "@bbosamuhamood",
+    title: "Portfolio Bbosa Muhamood",
+    description: "Entrepreneur and freelance full-stack Web developer dedicated to your business",
     images: `https://www.bbosamuhamood.com/assets/images/twitter-image.png`,
   },
 };
 
+// Root layout component
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${bG.className}`}>
+    <html lang="fr" className={`${bG.className}`}> {/* Sets French as the page language and applies the font */}
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* Structured data (JSON-LD for SEO) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -95,7 +100,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        <SanityLive />
+        <SanityLive /> {/* Enables live content updates from Sanity CMS */}
       </body>
     </html>
   );

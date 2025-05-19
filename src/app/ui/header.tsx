@@ -139,19 +139,19 @@ export default function Header({ dictionnary, lang }: { dictionnary: Record<stri
 
         <button
           onClick={() => {
-            const newLangPath = lang === "fr" ? "/en" : "/";
-            window.location.href = newLangPath;
+            window.location.href = "/en"; // Always go to the English version
           }}
           aria-label="Change Language"
           className="z-20 -mr-10 h-auto w-16 rounded-full bg-transparent px-4 py-2 shadow transition duration-200 hover:opacity-65 hidden lg:block"
         >
           <Image
-            src={lang === "fr" ? "/assets/images/flag-en.png" : "/assets/images/flag-fr.png"}
-            alt="flag"
+            src="/assets/images/flag-en.png"
+            alt="English Flag"
             width={64}
             height={64}
           />
-        </button>English
+        </button>
+        English
       </nav>
     </header>
   );
