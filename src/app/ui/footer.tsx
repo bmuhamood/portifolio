@@ -44,7 +44,7 @@ export default function Footer({ user, dictionnary }: { user: User; dictionnary:
             <div className="flex justify-center lg:justify-start">
               <Image
                 src="/assets/images/logoLight.png"
-                alt="logo FranckWebPro"
+                alt="logo Bbosa MuhamoodWebPro"
                 className="~h-16/20 ~w-16/20"
                 width={80}
                 height={80}
@@ -52,25 +52,29 @@ export default function Footer({ user, dictionnary }: { user: User; dictionnary:
               />
             </div>
             <div className="mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-4">
-              <Link href={user.linkedin_link ?? ""} target="_blank" rel="noreferrer">
-                <Image
-                  src="/assets/images/linkedin.png"
-                  width={45}
-                  height={45}
-                  alt="logo Linkedin"
-                  className="duration-200 hover:opacity-60"
-                />{" "}
-              </Link>
-              <Link href={user.github_link ?? ""} target="_blank" rel="noreferrer">
-                <Image
-                  src="/assets/images/logo-github.png"
-                  width={45}
-                  height={45}
-                  alt="logo github"
-                  className="rounded-lg bg-lightColor p-2 duration-200 hover:opacity-60"
-                />{" "}
-              </Link>
-              <Link href="https://www.malt.fr/profile/franckgalliod?overview" target="_blank" rel="noreferrer">
+              {user?.linkedin_link && (
+                <Link href={user.linkedin_link} target="_blank" rel="noreferrer">
+                  <Image
+                    src="/assets/images/linkedin.png"
+                    width={45}
+                    height={45}
+                    alt="logo Linkedin"
+                    className="duration-200 hover:opacity-60"
+                  />
+                </Link>
+              )}
+              {user?.github_link && (
+                <Link href={user.github_link} target="_blank" rel="noreferrer">
+                  <Image
+                    src="/assets/images/logo-github.png"
+                    width={45}
+                    height={45}
+                    alt="logo github"
+                    className="rounded-lg bg-lightColor p-2 duration-200 hover:opacity-60"
+                  />
+                </Link>
+              )}
+              {/* <Link href="https://www.malt.fr/profile/Bbosa Muhamoodgalliod?overview" target="_blank" rel="noreferrer">
                 <Image
                   src="/assets/images/malt.webp"
                   width={45}
@@ -78,7 +82,7 @@ export default function Footer({ user, dictionnary }: { user: User; dictionnary:
                   alt="logo Malt"
                   className="duration-200 hover:opacity-60"
                 />{" "}
-              </Link>
+              </Link> */}
               <p className="mx-auto mr-6 w-full text-center leading-relaxed lg:text-left dark:text-gray-400">
                 {dictionnary.description}
               </p>

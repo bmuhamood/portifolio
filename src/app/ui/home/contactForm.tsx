@@ -29,7 +29,7 @@ export default function ContactForm({ dictionnary }: { dictionnary: ContactFormD
           <p className="mb-4 max-w-xl text-lg" dangerouslySetInnerHTML={{ __html: dictionnary.description }}></p>
 
           <a
-            href="mailto:contact@franckwebpro.com"
+            href="mailto:contact@Bbosa Muhamoodwebpro.com"
             className="text-lg font-bold text-secondaryColor duration-200 hover:text-secondaryLight lg:text-2xl"
           >
             {dictionnary.email}{" "}

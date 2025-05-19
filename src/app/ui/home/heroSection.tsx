@@ -54,7 +54,7 @@ export default async function HeroSection({
         src="/assets/images/photoprofil.png"
         width={200}
         height={200}
-        alt="Photo de profil de Franck"
+        alt="Bbosa Muhamood Profile Picture"
         className="bottom-[20%] right-[15%] h-32 w-32 rounded-[1000px] lg:absolute"
       />
     </section>

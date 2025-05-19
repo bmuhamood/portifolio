@@ -26,7 +26,7 @@ export default function Header({ dictionnary, lang }: { dictionnary: Record<stri
           <span className="sr-only">Home</span>
           <Image
             src="/assets/images/logoLight.png"
-            alt="logo FranckWebPro"
+            alt="logo Bbosa MuhamoodWebPro"
             className="~h-16/20 ~w-16/20"
             width={80}
             height={80}

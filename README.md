@@ -24,7 +24,7 @@ Make sure you have the following software installed on your machine:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/FranckWebPro/Portfolio.git `
+   git clone https://github.com/bmuhamood/portifolio.git
 
    ```
 
@@ -92,7 +92,7 @@ Contributions are welcome! If you would like to make improvements or fix bugs, p
 
 ## Contact
 
-Franck
+Bbosa Muhamood
 
-- Email: contact@franckwebpro.com
-- LinkedIn: [Franck](https://www.linkedin.com/in/franck-galliod/)
+- Email: bbosa2009@gmail.com
+- LinkedIn: [Bbosa Muhamood](https://www.linkedin.com/in/bbosa-muhamood-06845576/)

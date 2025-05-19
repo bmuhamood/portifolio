@@ -8,12 +8,12 @@ import { SanityLive } from "@/sanity/client";
 const personStructuredData: WithContext<Person> = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Franck GALLIOD",
-  url: "https://www.franckwebpro.com/",
-  image: "https://www.franckwebpro.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprprofil.1419460a.png&w=640&q=75",
+  name: "Bbosa Muhamood GALLIOD",
+  url: "https://www.bbosamuhamood.com/",
+  image: "https://www.bbosamuhamood.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprprofil.1419460a.png&w=640&q=75",
   sameAs: [
-    "https://www.linkedin.com/in/franck-galliod/",
-    "https://github.com/FranckWebPro",
+    "https://www.linkedin.com/in/Bbosa Muhamood-galliod/",
+    "https://github.com/Bbosa MuhamoodWebPro",
     "https://www.agencenocode.com/",
   ],
   jobTitle: "Next.js / Webflow Web Developer",
@@ -26,9 +26,9 @@ const personStructuredData: WithContext<Person> = {
 const bG = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio Web Developer Next.js - FranckWebPro",
+  title: "Portfolio Web Developer Next.js - Bbosa MuhamoodWebPro",
   description: "Web Developer Next.js / and Webflow, freelance and independent developer",
-  metadataBase: new URL("https://www.franckwebpro.com/"),
+  metadataBase: new URL("https://www.bbosamuhamood.com/"),
   keywords: [
     "Web Developer",
     "Next.js developer",
@@ -53,27 +53,27 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://www.franckwebpro.com/",
-    title: "Portfolio Web Developer - FranckWebPro",
+    url: "https://www.bbosamuhamood.com/",
+    title: "Portfolio Web Developer - Bbosa MuhamoodWebPro",
     description:
       "Web Developer Next.js and Webflow, freelance and independent developer, I create with passion Saas and other applications for the Webflow marketplace",
     images: [
       {
-        url: `https://www.franckwebpro.com/assets/images/opengraph-image.png`,
+        url: `https://www.bbosamuhamood.com/assets/images/opengraph-image.png`,
         width: 800,
         height: 600,
-        alt: "Franck Portfolio",
+        alt: "Bbosa Muhamood Portfolio",
       },
     ],
-    siteName: "FranckWebPro",
+    siteName: "Bbosa MuhamoodWebPro",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@FranckWebPro",
-    title: "Portfolio Web Developer - FranckWebPro",
+    site: "@Bbosa MuhamoodWebPro",
+    title: "Portfolio Web Developer - Bbosa MuhamoodWebPro",
     description:
       "Web Developer Next.js and Webflow, freelance and independent developer, I create with passion Saas and other applications for the Webflow marketplace",
-    images: `https://www.franckwebpro.com/assets/images/twitter-image.png`,
+    images: `https://www.bbosamuhamood.com/assets/images/twitter-image.png`,
   },
 };
 

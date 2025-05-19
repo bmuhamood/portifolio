@@ -14,7 +14,7 @@ export default function Login() {
   const [password, setPassword] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isDisabled, setIsDisabled] = useState<boolean>(false);
-  const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://www.franckwebpro.com";
+  const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://www.bbosamuhamood.com";
 
   const handleSignin = async (
     e: React.SyntheticEvent,

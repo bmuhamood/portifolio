@@ -10,8 +10,8 @@
     },
     "hero_section": {
       "welcome_message": "Welcome to my Portfolio",
-      "introduction": "I'm Franck, <strong>Next.js Web Developer</strong>",
-      "description": "Entrepreneur and freelance full-stack Typescript developer dedicated to your business",
+      "introduction": "I'm Bbosa Muhamood, <strong>Fullstack Web Developer</strong>",
+      "description": "Entrepreneur and freelance full-stack Web developer dedicated to your business",
       "download_cv": "Download my Resume",
       "view_projects": "See my projects"
     },
@@ -25,15 +25,15 @@
       },
       "seo": {
         "title": "Google SEO",
-        "description": "Optimizing your website/web application for organic ranking on Google and other search engines (SEO)."
+        "description": "Optimizing website/web application for organic ranking on Google and other search engines (SEO)."
       },
       "web_design": {
         "title": "Web Design",
-        "description": "Creating your design and branding with Figma, including wireframing, mockups, or directly on Webflow."
+        "description": "Creating design and branding with Figma, including wireframing, mockups, or directly on Webflow."
       },
       "accessibility": {
         "title": "Accessibility",
-        "description": "Auditing and improving the accessibility of your website, adhering to WCAG standards."
+        "description": "Auditing and improving the accessibility of website, adhering to WCAG standards."
       }
     },
     "experience_section": {
@@ -80,7 +80,7 @@
     "contact": {
       "title": "A crazy project? Let's discuss it:",
       "description": "Whether you're a business, independent professional, or just curious about web development, don't hesitate to contact me. You can reach me by email or through the form, and I'll respond as soon as possible!",
-      "email": "contact@franckwebpro.com",
+      "email": "contact@Bbosa Muhamoodwebpro.com",
       "form": {
         "name": "Name",
         "email": "Email",
